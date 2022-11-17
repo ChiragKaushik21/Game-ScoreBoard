@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>ScoreBoard</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>
+            ScoreBoard
+        </h1>
+    </div>
+    <div class="container">
+        <div>
+            <h3 class="heading">HOME</h3>
+            <h1 class="board" id="score-home">0</h1>
+            
+            <button class="ibutton" id="plus-one" onclick="plusOne()">+1</button>
+            <button class="ibutton" id="plus-two" onclick="plusTwo()">+2</button>
+            <button class="ibutton" id="plus-three" onclick="plusThree()">+3</button>
+            <br><br><br><br>
+            <h4 class="fouls">FOULS</h4>
+            <div class="fh">
+                <h1 class="fh" id="foul-h">0</h1>
+                <button class="fh" onclick="foulH()">+</button>
+            </div>
+        </div>
+        <div class="vl"></div>
+        
+        <div>
+            <h3 class="heading">GUEST</h3>
+            <h1 class="board" id="score-guest">0</h1>
+            <button class="ibutton" id="plus-one" onclick="gplusOne()">+1</button>
+            <button class="ibutton" id="plus-two" onclick="gplusTwo()">+2</button>
+            <button class="ibutton" id="plus-three" onclick="gplusThree()">+3</button>
+            <br><br><br><br>
+            <h4 class="fouls">FOULS</h4>
+            <div class="fg">
+                <h1 class="fg" id="foul-g">0</h1>
+                <button class="fg" onclick="foulG()">+</button>
+            </div>
+        </div>
+
+    </div>
+    <br><br><br>
+    <div class="reset">
+        <button onclick="onReset()">RESET</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
